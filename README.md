@@ -1,4 +1,8 @@
 # TodoAngularLs
+Project should be avilable at: https://kcricket.github.io/todo-angular-ls/
+This project consists in a desktop todo notes app. Storage with localstorage and hosting with github-pages
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
 
