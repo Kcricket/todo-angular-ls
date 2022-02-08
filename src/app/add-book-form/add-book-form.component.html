@@ -1,0 +1,35 @@
+    <div *ngFor="let item of items.xitems; index as index">
+      <div *ngIf="item.visible" class="cardDiv">
+        <div class="divCol">
+          <div class="divCuerpo">
+            <h2 [ngClass]="{'bookCard':item.completed}">{{item.book}},  {{item.completed==true? "Done": "To Do"}}</h2>
+          </div>
+          <div class="divDate" [ngStyle]="{'background-color' : getPrio(item)}">
+            <p>{{timeDifference(item.date)}}</p>
+          </div>
+        </div>
+        <div class="btnPrio"> 
+          <h3>{{item.priority}}</h3>
+        </div>
+        <div class="btnPrio">
+          <!-- //Reasigna segun el numero y actualiza localstorage -->
+          <button (click)="changePrio(item, 1)">Low</button>
+          <button (click)="changePrio(item, 2)">Mid</button>
+          <button (click)="changePrio(item, 3)">High</button>
+        </div>
+        <button id="btnItem" (click)="deleteItem(index)">Delete</button>
+        <button id="btnItem" (click)="changeCompleted(item)">Change completed</button>
+    
+      </div>
+    </div>  
+    <div class="divOptions">
+            <div>
+                <button (click)="ordenaOculta(3)">All</button>
+                <button (click)="ordenaOculta(1)">Uncompleted</button>
+                <button (click)="ordenaOculta(2)">Completed</button>
+            </div>
+            <button (click)="clearCompleted()">Clear completed</button>
+    </div>
+ 
+<!-- ERROR
+FALTA AÑADIR ITEMS.xitems AL COMPONENTE PARA USARLO, RECOMIENDO HACERLO DESDE SERVICIO -->

@@ -1,0 +1,93 @@
+:root{
+    --color1:#FBE5E5;
+    --color2: #FFA1C9;
+    --color3: #F94892;
+    --color4: #E60965;
+}
+button{
+    color: rgb(255, 255, 255); font-size: 17px; line-height: 17px; padding: 12px; border-radius: 21px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(rgb(230, 9, 101) 0%, rgb(255, 161, 201) 53%, rgb(230, 9, 101) 100%); box-shadow: rgba(0, 0, 0, 0.82) 1px 1px 26px 7px; border: 2px none rgb(28, 110, 164); display: inline-block;}
+button:hover {
+    background: #E60965; }
+button:active {
+    background: #E60965; }
+
+input{
+    width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #E60965;
+  color: white;
+}
+
+.inputDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divInfoItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #F94892;
+    -webkit-box-shadow: 2px 2px 48px 22px #E60965; 
+    box-shadow: 2px 2px 48px 22px #E60965;
+    width: 70%;
+    padding: 10px;
+    margin : 20px;
+    margin-top: 50px
+}
+.searchInp{
+    width: 70%;
+    justify-content: space-between;
+    margin: 10px
+}
+.divForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.divFormChecks{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+}
+.divChecks{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.notasNOptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    width: 100%;
+}
+.notasContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--color2); */
+    width: 100%;
+
+}
+#counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#FBE5E5; 
+    width: 100%;
+}

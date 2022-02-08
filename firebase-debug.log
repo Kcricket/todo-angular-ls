@@ -1,0 +1,81 @@
+[debug] [2022-02-08T17:30:25.173Z] ----------------------------------------------------------------------
+[debug] [2022-02-08T17:30:25.175Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2022-02-08T17:30:25.176Z] CLI Version:   10.1.5
+[debug] [2022-02-08T17:30:25.176Z] Platform:      linux
+[debug] [2022-02-08T17:30:25.176Z] Node Version:  v17.3.0
+[debug] [2022-02-08T17:30:25.177Z] Time:          Tue Feb 08 2022 18:30:25 GMT+0100 (hora estándar de Europa central)
+[debug] [2022-02-08T17:30:25.177Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-02-08T17:30:25.250Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-08T17:30:25.250Z] > authorizing via signed-in user (tedymaican@gmail.com)
+[debug] [2022-02-08T17:30:25.251Z] [iam] checking project todo-angular-ls for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-02-08T17:30:25.253Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-angular-ls:testIamPermissions [none]
+[debug] [2022-02-08T17:30:25.254Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-angular-ls:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-08T17:30:26.044Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-angular-ls:testIamPermissions 200
+[debug] [2022-02-08T17:30:26.044Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todo-angular-ls:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-02-08T17:30:26.046Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todo-angular-ls [none]
+[debug] [2022-02-08T17:30:26.341Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todo-angular-ls 200
+[debug] [2022-02-08T17:30:26.342Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todo-angular-ls {"projectId":"todo-angular-ls","projectNumber":"637886565354","displayName":"todo-angular-ls","name":"projects/todo-angular-ls","resources":{"hostingSite":"todo-angular-ls"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'todo-angular-ls'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-02-08T17:30:26.358Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-02-08T17:30:26.358Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-02-08T17:30:26.533Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Tue, 08 Feb 2022 16:30:27 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-08T17:30:26.556Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/todo-angular-ls/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-02-08T17:30:27.778Z] <<< HTTP RESPONSE 500 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 08 Feb 2022 16:30:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-08T17:30:27.778Z] <<< HTTP RESPONSE BODY {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-02-08T17:30:27.913Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Tue, 08 Feb 2022 16:30:28 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "0",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/todo-angular-ls/versions",
+        "path": "/v1beta1/sites/todo-angular-ls/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/todo-angular-ls/versions"
+      },
+      "method": "POST"
+    }
+  }
+}

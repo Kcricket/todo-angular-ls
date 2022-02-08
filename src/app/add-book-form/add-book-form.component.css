@@ -1,0 +1,117 @@
+/* //card colors */
+button {
+    color: rgb(255, 255, 255); font-size: 13px; line-height: 13px; padding: 9px; border-radius: 22px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(45deg, rgb(230, 9, 101) 0%, rgb(249, 72, 146) 53%, rgb(251, 229, 229) 100%); box-shadow: rgba(0, 0, 0, 0.82) 1px 1px 26px 7px; border: 2px none rgb(28, 110, 164); display: inline-block; margin: 5px;}
+  button:hover {
+    background: #E60965; }
+  button:active {
+    background: #FBE5E5; }
+  
+  .bookCard{
+      color:deepskyblue;
+      text-decoration: line-through;
+      text-decoration-color: red;
+  
+  }
+  .divCol{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-bottom: 20px;
+  }
+  .divDate{
+      padding: 10px;
+  }
+  .divOptions{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      padding-left: 20px;
+      padding-right:20px;
+  
+  }
+  
+  .cardDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin: 20px;
+  
+    background: #D47AE8;
+    background: -moz-linear-gradient(top, #D47AE8 0%, #F4BEEE 50%, #A8ECE7 100%);
+    background: -webkit-linear-gradient(top, #D47AE8 0%, #F4BEEE 50%, #A8ECE7 100%);
+      -webkit-box-shadow: 2px 2px 48px 22px #E60965; 
+      box-shadow: 2px 2px 48px 22px #E60965;
+  
+    width: 90%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    -webkit-border-radius: 26px 0px 26px 0px;
+    border-radius: 26px 0px 26px 0px;
+  
+  
+        transition: all 0.8s ease;
+    margin-right: 10px;
+  }
+  .list-complete{
+      width: 100%;
+  }
+  .list-complete-enter-from,
+  .list-complete-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .list-complete-leave-active {
+    position: absolute;
+  }
+  
+  .cardDivA{
+          animation: infinite;
+  
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin: 20px;
+  
+    background: #D47AE8;
+    background: -moz-linear-gradient(top, #D47AE8 0%, #F4BEEE 50%, #A8ECE7 100%);
+    background: -webkit-linear-gradient(top, #D47AE8 0%, #F4BEEE 50%, #A8ECE7 100%);
+      -webkit-box-shadow: 2px 2px 48px 22px #E60965; 
+      box-shadow: 2px 2px 48px 22px #E60965;
+  
+    width: 90%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    -webkit-border-radius: 26px 0px 26px 0px;
+    border-radius: 26px 0px 26px 0px;
+  
+  }
+  
+  .divCuerpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+  
+  }
+  .btnPrio{
+      display: flex;
+      flex-direction: column;
+      margin-right: 10px;
+      margin-left: 20px;
+  
+  }
+  h2{
+    width: 90%;
+    word-wrap: break-word;
+  }
+  
